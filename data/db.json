@@ -1,39 +1,174 @@
 {
   "schedules": [
-    { "id": 1, "day": "Monday", "time": "03:40" },
-    { "id": 2, "day": "Tuesday", "time": "04:40" },
-    { "id": 3, "day": "Wednesday", "time": "04:40" },
-    { "id": 4, "day": "Thursday", "time": "04:40" },
-    { "id": 5, "day": "Friday", "time": "04:40" },
-    { "id": 6, "day": "Saturday", "time": "04:40" },
-    { "id": 7, "day": "Sunday", "time": "04:40" },
-    { "id": 8, "day": "Monday", "time": "02:30" },
-    { "id": 9, "day": "Tuesday", "time": "02:30" },
-    { "id": 10, "day": "Wednesday", "time": "02:30" },
-    { "id": 11, "day": "Thursday", "time": "02:30" },
-    { "id": 12, "day": "Friday", "time": "02:30" },
-    { "id": 13, "day": "Saturday", "time": "02:30" },
-    { "id": 14, "day": "Sunday", "time": "02:30" },
-    { "id": 15, "day": "Monday", "time": "06:00" },
-    { "id": 16, "day": "Tuesday", "time": "06:00" },
-    { "id": 17, "day": "Wednesday", "time": "06:00" },
-    { "id": 18, "day": "Thursday", "time": "06:00" },
-    { "id": 19, "day": "Friday", "time": "06:00" },
-    { "id": 20, "day": "Saturday", "time": "06:00" },
-    { "id": 21, "day": "Sunday", "time": "06:00" },
-    { "id": 22, "day": "Monday", "time": "16:55" },
-    { "id": 23, "day": "Tuesday", "time": "16:55" },
-    { "id": 24, "day": "Wednesday", "time": "16:55" },
-    { "id": 25, "day": "Thursday", "time": "16:55" },
-    { "id": 26, "day": "Friday", "time": "16:55" },
-    { "id": 27, "day": "Saturday", "time": "16:55" },
-    { "id": 28, "day": "Sunday", "time": "16:55" },
-    { "id": 29, "day": "Monday", "time": "19:20" },
-    { "id": 30, "day": "Tuesday", "time": "19:20" },
-    { "id": 31, "day": "Wednesday", "time": "19:20" },
-    { "id": 32, "day": "Thursday", "time": "19:20" },
-    { "id": 33, "day": "Friday", "time": "19:20" },
-    { "id": 34, "day": "Saturday", "time": "19:20" },
-    { "id": 35, "day": "Sunday", "time": "19:20" }
+    {
+      "id": 2,
+      "day": "Tuesday",
+      "time": "04:40"
+    },
+    {
+      "id": 3,
+      "day": "Wednesday",
+      "time": "04:40"
+    },
+    {
+      "id": 4,
+      "day": "Thursday",
+      "time": "04:40"
+    },
+    {
+      "id": 5,
+      "day": "Friday",
+      "time": "04:40"
+    },
+    {
+      "id": 6,
+      "day": "Saturday",
+      "time": "04:40"
+    },
+    {
+      "id": 7,
+      "day": "Sunday",
+      "time": "04:40"
+    },
+    {
+      "id": 8,
+      "day": "Monday",
+      "time": "02:30"
+    },
+    {
+      "id": 9,
+      "day": "Tuesday",
+      "time": "02:30"
+    },
+    {
+      "id": 10,
+      "day": "Wednesday",
+      "time": "02:30"
+    },
+    {
+      "id": 11,
+      "day": "Thursday",
+      "time": "02:30"
+    },
+    {
+      "id": 12,
+      "day": "Friday",
+      "time": "02:30"
+    },
+    {
+      "id": 13,
+      "day": "Saturday",
+      "time": "02:30"
+    },
+    {
+      "id": 14,
+      "day": "Sunday",
+      "time": "02:30"
+    },
+    {
+      "id": 15,
+      "day": "Monday",
+      "time": "06:00"
+    },
+    {
+      "id": 16,
+      "day": "Tuesday",
+      "time": "06:00"
+    },
+    {
+      "id": 17,
+      "day": "Wednesday",
+      "time": "06:00"
+    },
+    {
+      "id": 18,
+      "day": "Thursday",
+      "time": "06:00"
+    },
+    {
+      "id": 19,
+      "day": "Friday",
+      "time": "06:00"
+    },
+    {
+      "id": 20,
+      "day": "Saturday",
+      "time": "06:00"
+    },
+    {
+      "id": 21,
+      "day": "Sunday",
+      "time": "06:00"
+    },
+    {
+      "id": 22,
+      "day": "Monday",
+      "time": "16:55"
+    },
+    {
+      "id": 23,
+      "day": "Tuesday",
+      "time": "16:55"
+    },
+    {
+      "id": 24,
+      "day": "Wednesday",
+      "time": "16:55"
+    },
+    {
+      "id": 25,
+      "day": "Thursday",
+      "time": "16:55"
+    },
+    {
+      "id": 26,
+      "day": "Friday",
+      "time": "16:55"
+    },
+    {
+      "id": 27,
+      "day": "Saturday",
+      "time": "16:55"
+    },
+    {
+      "id": 28,
+      "day": "Sunday",
+      "time": "16:55"
+    },
+    {
+      "id": 29,
+      "day": "Monday",
+      "time": "19:20"
+    },
+    {
+      "id": 30,
+      "day": "Tuesday",
+      "time": "19:20"
+    },
+    {
+      "id": 31,
+      "day": "Wednesday",
+      "time": "19:20"
+    },
+    {
+      "id": 32,
+      "day": "Thursday",
+      "time": "19:20"
+    },
+    {
+      "id": 33,
+      "day": "Friday",
+      "time": "19:20"
+    },
+    {
+      "id": 34,
+      "day": "Saturday",
+      "time": "19:20"
+    },
+    {
+      "id": 35,
+      "day": "Sunday",
+      "time": "19:20"
+    }
   ]
 }

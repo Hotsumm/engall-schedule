@@ -5,7 +5,7 @@ import ScheduleItem from './ScheduleItem';
 import { ScheduleType, ScheduleByDayType } from '../../types/schedule';
 import { weekList } from 'constants/weeks';
 
-const ScheduleBox = () => {
+const ScheduleViewBox = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [schedulesByDay, setSchedulesByDay] =
     useState<ScheduleByDayType | null>(null);
@@ -64,7 +64,7 @@ const ScheduleBox = () => {
     </Container>
   );
 };
-export default ScheduleBox;
+export default ScheduleViewBox;
 
 const Container = styled.div`
   width: auto;

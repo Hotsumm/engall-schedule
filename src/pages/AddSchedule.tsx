@@ -1,12 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import ScheduleLayout from '../components/Schedule/ScheduleLayout';
+import ScheduleAddBox from '../components/Schedule/ScheduleAddBox';
 
 const AddSchedule = () => {
   return (
     <Container>
-      <ScheduleLayout title="Add class Schedule" buttonText="Save">
-        <Content>AddSchedule Page</Content>
+      <ScheduleLayout title="Add class schedule" buttonText="Save">
+        <Content>
+          <ScheduleAddBox />
+        </Content>
       </ScheduleLayout>
     </Container>
   );

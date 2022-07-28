@@ -16,8 +16,8 @@ const Navigation = () => {
 
 const Container = styled.nav`
   width: 100%;
-  height: 80px;
-  background: #2980b9;
+  height: 60px;
+  background: #44a7c8;
 `;
 
 const Wrapper = styled.div`
@@ -30,7 +30,7 @@ const Logo = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
 `;
 

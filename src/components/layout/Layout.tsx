@@ -21,4 +21,6 @@ const View = styled.div`
   max-width: 1440px;
 `;
 
-const Main = styled.main``;
+const Main = styled.main`
+  padding-top: 60px;
+`;

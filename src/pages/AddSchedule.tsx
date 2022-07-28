@@ -5,7 +5,7 @@ import ScheduleLayout from '../components/Schedule/ScheduleLayout';
 const AddSchedule = () => {
   return (
     <Container>
-      <ScheduleLayout title="Add class Schedule">
+      <ScheduleLayout title="Add class Schedule" buttonText="Save">
         <Content>AddSchedule Page</Content>
       </ScheduleLayout>
     </Container>

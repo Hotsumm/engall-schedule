@@ -1,12 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 import ScheduleLayout from '../components/Schedule/ScheduleLayout';
+import ScheduleBox from '../components/Schedule/ScheduleBox';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const navigateAddSchedulePage = (): void => {
+    navigate('/addSchedule');
+  };
+
   return (
     <Container>
-      <ScheduleLayout title="Class Schedule">
-        <Content>Home Page</Content>
+      <ScheduleLayout
+        title="Class Schedule"
+        buttonText="Add Class Schedule"
+        onClickButton={navigateAddSchedulePage}
+      >
+        <ScheduleBox />
       </ScheduleLayout>
     </Container>
   );
@@ -15,10 +27,6 @@ const Home = () => {
 const Container = styled.div`
   width: 100%;
   padding: 0 30px;
-`;
-
-const Content = styled.div`
-  width: 100%;
 `;
 
 export default Home;

@@ -20,8 +20,10 @@ const GlobalStyles = createGlobalStyle`
     border:none;
   }
   ul,ol,li {
-    list-style:none;
-    
+    list-style:none; 
+  }
+  a{
+    color: #fff; text-decoration: none; outline: none;
   }
 `;
 

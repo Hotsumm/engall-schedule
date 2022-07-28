@@ -9,8 +9,10 @@ type LayoutProps = {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <View>
-      <Navigation />
-      <Main>{children}</Main>
+      <Container>
+        <Navigation />
+        <Main>{children}</Main>
+      </Container>
     </View>
   );
 };
@@ -18,9 +20,18 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 export default Layout;
 
 const View = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const Container = styled.div`
   max-width: 1440px;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
 const Main = styled.main`
-  padding-top: 60px;
+  width: 100%;
+  padding: 60px 0;
 `;

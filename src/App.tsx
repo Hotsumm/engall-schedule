@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyles from 'styles/GlobalStyles';
+import Router from './Router';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <GlobalStyles />
-      <Container></Container>;
+      <Container>
+        <Router />
+      </Container>
     </>
   );
-}
+};
 
 export default App;
 

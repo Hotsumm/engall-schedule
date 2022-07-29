@@ -1,7 +1,7 @@
 export type ScheduleType = {
   day: string;
   time: string;
-  id: number;
+  id?: number;
 };
 
 export type ScheduleByDayType = Record<string, ScheduleType[]>;

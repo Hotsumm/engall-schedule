@@ -17,7 +17,11 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
 }) => {
   const handleDeleteSchedule = async (day: string, id: number) => {
     removeSchedule(day, id);
-    await deleteScheduleById(id);
+    try {
+      await deleteScheduleById(id);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <Container>
@@ -30,7 +34,10 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
                 {schedule.time} ~ {getStartToEndTime(schedule.time)}
               </ScheduleTime>
               <Button
-                onClick={() => handleDeleteSchedule(schedule.day, schedule.id)}
+                onClick={() => {
+                  if (!schedule.id) return;
+                  handleDeleteSchedule(schedule.day, schedule.id);
+                }}
               >
                 X
               </Button>
@@ -56,8 +63,6 @@ const Title = styled.div`
 const ScheduleList = styled.div`
   width: 100%;
   height: 500px;
-  max-height: 500px;
-  overflow-y: scroll;
   padding: 10px 5px;
 `;
 

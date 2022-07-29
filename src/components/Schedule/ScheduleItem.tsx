@@ -33,14 +33,16 @@ const ScheduleItem: React.FC<ScheduleItemProps> = ({
               <ScheduleTime>
                 {schedule.time} ~ {getStartToEndTime(schedule.time)}
               </ScheduleTime>
-              <Button
-                onClick={() => {
-                  if (!schedule.id) return;
-                  handleDeleteSchedule(schedule.day, schedule.id);
-                }}
-              >
-                X
-              </Button>
+              <DeleteButton>
+                <button
+                  onClick={() => {
+                    if (!schedule.id) return;
+                    handleDeleteSchedule(schedule.day, schedule.id);
+                  }}
+                >
+                  X
+                </button>
+              </DeleteButton>
             </Schedule>
           ))}
       </ScheduleList>
@@ -55,6 +57,7 @@ const Container = styled.div`
 
 const Title = styled.div`
   width: 100%;
+  text-align: center;
   padding: 10px 20px;
   font-size: 16px;
   border-bottom: 1px solid #cfcfcf;
@@ -62,15 +65,19 @@ const Title = styled.div`
 
 const ScheduleList = styled.div`
   width: 100%;
-  height: 500px;
-  padding: 10px 5px;
+  padding: 20px 5px;
 `;
 
 const Schedule = styled.div`
   display: flex;
-  padding: 5px 15px;
-  background: #f7f6fb;
-
+  padding: 10px 15px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  :hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
   & + & {
     margin-top: 15px;
   }
@@ -81,13 +88,15 @@ const ScheduleTime = styled.div`
   font-size: 16px;
 `;
 
-const Button = styled.button`
-  right: 5px;
-  border-radius: 50%;
-  padding: 3px 4px;
-  width: 20px;
-  height: 20px;
-  background: grey;
-  color: white;
-  font-size: 12px;
+const DeleteButton = styled.div`
+  display: flex;
+  button {
+    background: grey;
+    border-radius: 50%;
+    padding: 2px;
+    width: 18px;
+    height: 18px;
+    color: white;
+    font-size: 12px;
+  }
 `;

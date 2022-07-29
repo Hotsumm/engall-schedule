@@ -2,11 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import ScheduleLayout from '../components/Schedule/ScheduleLayout';
 import ScheduleAddBox from '../components/Schedule/ScheduleAddBox';
+import { useNavigate } from 'react-router-dom';
 
 const AddSchedule = () => {
+  const navigate = useNavigate();
+  const handleBackClick = (): void => {
+    navigate(-1);
+  };
+
   return (
     <Container>
-      <ScheduleLayout title="Add class schedule" buttonText="Save">
+      <ScheduleLayout
+        title="Add class schedule"
+        buttonText="Back"
+        onClickButton={handleBackClick}
+      >
         <Content>
           <ScheduleAddBox />
         </Content>

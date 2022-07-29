@@ -67,12 +67,12 @@ const ScheduleViewBox = () => {
 export default ScheduleViewBox;
 
 const Container = styled.div`
-  width: auto;
   border: 1px solid #cfcfcf;
 `;
 
 const ScheduleList = styled.div`
+  display: flex;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  max-height: 400px;
+  overflow-y: scroll;
 `;
